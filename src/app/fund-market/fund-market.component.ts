@@ -3,11 +3,15 @@ import { HealthCheckService } from '../services/health-check.service';
 import { AsyncPipe, JsonPipe } from '@angular/common';
 import {
   BehaviorSubject,
+  Observable,
   concatMap,
   from,
   interval,
   map,
   mergeMap,
+  repeat,
+  repeatWhen,
+  take,
   zip,
 } from 'rxjs';
 
@@ -33,9 +37,10 @@ export class FundMarketComponent implements OnInit {
         map((data:any)=>  data.d?.liveNavList[0]?.values),
         mergeMap((values: any) => {
           this.values = values;
-          return interval(1000);
+          return interval(300).pipe(take(values.length));
         }),
-        map((i) => this.values[i])
+        map((i) => this.values[i]),
+        repeat()
       )
       .subscribe((data: any) => {
            this.fundValue$.next(data.Value)

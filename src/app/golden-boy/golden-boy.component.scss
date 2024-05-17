@@ -1,6 +1,5 @@
 .pipboy {
     fill: green;
-    
     position: absolute;
     top: 180px;
     left: 700px;
@@ -65,17 +64,4 @@
     fill: red;
     display: none;
 }
-
-
-#test {
-    fill: none;
-    stroke: #72c855;
-    stroke-width: 3;
-}
-.floating-svg {
-    position: absolute;
-    justify-content: center;
-    align-items: center;  
-    /* background-color: yellow; */
-    z-index: 10;                      
-}
+ 
