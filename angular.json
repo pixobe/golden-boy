@@ -65,7 +65,8 @@
               "buildTarget": "goldenboy:build:production"
             },
             "development": {
-              "buildTarget": "goldenboy:build:development"
+              "buildTarget": "goldenboy:build:development",
+              "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

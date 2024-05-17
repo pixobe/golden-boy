@@ -1,0 +1,81 @@
+.pipboy {
+    fill: green;
+    
+    position: absolute;
+    top: 180px;
+    left: 700px;
+}
+
+/* Body */
+#pipboybodyhappy {
+    fill: #72c855;
+    
+}
+#pipboybodysad {
+    fill: red;
+    display: none;
+}
+
+/* Head */
+#pipboyheadhappy {
+    fill: #72c855;
+    
+}
+#pipboyheadsad {
+    fill: red;
+    display: none;
+}
+
+/* Right Arm */
+#pipboyrightarmhappy {
+    fill: #72c855;
+    
+}
+#pipboyrightarmsad {
+    fill: red;
+    display: none;
+}
+
+/* Left Arm */
+#pipboyleftarmhappy {
+    fill: #72c855;
+    
+}
+#pipboyleftarmsad {
+    fill: red;
+    display: none;
+}
+
+/* Right Leg */
+#pipboyrightleghappy {
+    fill: #72c855;
+    
+}
+#pipboyrightlegsad {
+    fill: red;
+    display: none;
+}
+
+/* Left Leg */
+#pipboyleftleghappy {
+    fill: #72c855;
+    
+}
+#pipboyleftlegsad {
+    fill: red;
+    display: none;
+}
+
+
+#test {
+    fill: none;
+    stroke: #72c855;
+    stroke-width: 3;
+}
+.floating-svg {
+    position: absolute;
+    justify-content: center;
+    align-items: center;  
+    /* background-color: yellow; */
+    z-index: 10;                      
+}
